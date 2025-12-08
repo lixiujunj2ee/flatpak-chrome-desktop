@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=X
+Comment=x X
+Exec=pwa-run lodlkdfmihgonocnmddehnfgiljnadcf
+Icon=chrome-lodlkdfmihgonocnmddehnfgiljnadcf-Default
+StartupWMClass=chrome-lodlkdfmihgonocnmddehnfgiljnadcf--Default
+Terminal=false
+StartupNotify=true
+Categories=Network;WebBrowser;
+

@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Douyin
+Comment=douyin
+Exec=pwa-run nddflfcbcnndpkncdlkndocendhgndbc
+Icon=chrome-nddflfcbcnndpkncdlkndocendhgndbc-Default
+StartupWMClass=chrome-nddflfcbcnndpkncdlkndocendhgndbc-Default
+Terminal=false
+StartupNotify=true
+Categories=Network;WebBrowser;
+

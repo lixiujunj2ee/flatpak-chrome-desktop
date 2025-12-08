@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Trip.com
+Comment=trip
+Exec=pwa-run eghhpmahmdfncfkppnlahggbmkhaflek
+Icon=chrome-eghhpmahmdfncfkppnlahggbmkhaflek-Default
+StartupWMClass=chrome-eghhpmahmdfncfkppnlahggbmkhaflek-Default
+StartupNotify=true
+Categories=Network;WebBrowser;

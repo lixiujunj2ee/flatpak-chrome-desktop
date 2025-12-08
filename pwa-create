@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+APP_ID="$1"
+APP_NAME="$2"
+FILE_NAME="$3"
+
+if [ -z "$APP_ID" ] || [ -z "$APP_NAME" ] || [ -z "$FILE_NAME" ]; then
+    echo "use: pwa-create <APP-ID> <app name> <file name>"
+    echo "pwa-create caidcmannjgahlnbpmidmiecjcoiiigg Gemini gemini"
+    exit 1
+fi
+
+# 查找
+DESKTOP_SRC=$(find ~/.local/share/applications/ -iname "${FILE_NAME}.desktop" | head -n 1)
+
+if [ ! -z "$DESKTOP_SRC" ]; then
+    rm ~/.local/share/applications/*${APP_ID}*.desktop
+    echo "${FILE_NAME}.desktop is exist ..."
+    exit 1
+fi
+
+# 更新系统图标缓存
+gtk-update-icon-cache -f -t ~/.local/share/icons
+
+# 生成 desktop 文件
+DESKTOP_FILE=~/.local/share/applications/${FILE_NAME}.desktop
+
+cat > "$DESKTOP_FILE" <<EOF
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=${APP_NAME}
+Exec=pwa-run ${APP_ID}
+Icon=chrome-${APP_ID}-Default
+StartupWMClass=chrome-${APP_ID}-Default
+Terminal=false
+StartupNotify=true
+Categories=Network;WebBrowser;
+EOF
+
+# 清理自动生成文件
+rm ~/.local/share/applications/*${APP_ID}*.desktop
+
+# 刷新 desktop 缓存
+update-desktop-database ~/.local/share/applications/ > /dev/null 2>&1
+
+echo "create success：${DESKTOP_FILE}"

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Search
+Exec=pwa-run lcjemainhlogiljbklippeaciehoammp
+Icon=chrome-lcjemainhlogiljbklippeaciehoammp-Default
+StartupWMClass=chrome-lcjemainhlogiljbklippeaciehoammp-Default
+Terminal=false
+StartupNotify=true
+Categories=Network;WebBrowser;

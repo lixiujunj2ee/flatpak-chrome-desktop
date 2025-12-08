@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=YouTube Music
+Exec=pwa-run cinhimbnkkaeohfgghhklpknlkffjgod
+Icon=chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default
+StartupWMClass=chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default
+Terminal=false
+StartupNotify=true
+Categories=Network;WebBrowser;

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Facebook
+Comment=face
+Exec=pwa-run gelmehpcmiomoockkmdlfadoankpigol
+Icon=chrome-gelmehpcmiomoockkmdlfadoankpigol-Default
+StartupWMClass=chrome-gelmehpcmiomoockkmdlfadoankpigol-Default
+Terminal=false
+StartupNotify=true
+Categories=Network;WebBrowser;

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+APP_ID="$1"
+PROFILE="Default"
+WMCLASS="chrome-$1-Default"
+
+if [ "$APP_ID" == "" ]; then
+  echo "input app-id ..."
+  exit 0	
+fi
+
+# 有窗口 → 激活它
+WIN_ID=$(busctl --user call   org.gnome.Shell   /de/lucaswerkmeister/ActivateWindowByTitle   de.lucaswerkmeister.ActivateWindowByTitle   activateByWmClass s   "$WMCLASS")
+
+if [ "$WIN_ID" == "b true" ]; then
+  exit 0	
+fi
+
+# 没有 → 启动新窗口
+flatpak run \
+  --command=/app/bin/chrome \
+  com.google.Chrome \
+  --profile-directory="$PROFILE" \
+  --app-id="$APP_ID" \
+  --ozone-platform-hint="auto" \
+  --enable-features="WaylandWindowDecorations" \

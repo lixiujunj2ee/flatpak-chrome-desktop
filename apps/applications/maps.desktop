@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Google Maps
+Comment=map
+Exec=pwa-run klhaacmefjjbljbknaofiodglmlcjghi
+Icon=chrome-klhaacmefjjbljbknaofiodglmlcjghi-Default
+StartupWMClass=chrome-klhaacmefjjbljbknaofiodglmlcjghi-Default
+Terminal=false
+StartupNotify=true
+Categories=Network;WebBrowser;

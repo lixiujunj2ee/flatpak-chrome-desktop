@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=JD
+Exec=pwa-run kidolclpgdaafejmamnnanhdhlnmmiai
+Icon=chrome-kidolclpgdaafejmamnnanhdhlnmmiai-Default
+StartupWMClass=chrome-kidolclpgdaafejmamnnanhdhlnmmiai-Default
+Terminal=false
+StartupNotify=true
+Categories=Network;WebBrowser;

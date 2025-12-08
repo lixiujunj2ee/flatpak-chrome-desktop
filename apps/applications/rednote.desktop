@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=rednote
+Comment=red note
+Exec=pwa-run jmidjmfeoeoanppkhaglamohfgncdcll
+Icon=chrome-jmidjmfeoeoanppkhaglamohfgncdcll-Default
+StartupWMClass=chrome-jmidjmfeoeoanppkhaglamohfgncdcll-Default
+Terminal=false
+StartupNotify=true
+Categories=Network;WebBrowser;

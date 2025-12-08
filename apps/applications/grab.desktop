@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Grab
+Exec=pwa-run llepnlgnldbacmbajeadkjbekmgnhmpd
+Icon=chrome-llepnlgnldbacmbajeadkjbekmgnhmpd-Default
+StartupWMClass=chrome-llepnlgnldbacmbajeadkjbekmgnhmpd-Defalut
+Terminal=false
+StartupNotify=true
+Categories=Network;WebBrowser;

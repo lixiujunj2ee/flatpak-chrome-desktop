@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Grok
+Exec=pwa-run ggjocahimgaohmigbfhghnlfcnjemagj
+Icon=chrome-ggjocahimgaohmigbfhghnlfcnjemagj-Default
+StartupWMClass=chrome-ggjocahimgaohmigbfhghnlfcnjemagj-Default
+Terminal=false
+StartupNotify=true
+Categories=Network;WebBrowser;

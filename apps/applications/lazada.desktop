@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Lazada
+Exec=pwa-run pfpeckjkfaddaobeaeebceljbdnbdjeg
+Icon=chrome-pfpeckjkfaddaobeaeebceljbdnbdjeg-Default
+StartupWMClass=chrome-pfpeckjkfaddaobeaeebceljbdnbdjeg-Default
+Terminal=false
+StartupNotify=true
+Categories=Network;WebBrowser;

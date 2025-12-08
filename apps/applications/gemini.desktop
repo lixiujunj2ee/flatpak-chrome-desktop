@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Gemini
+Exec=pwa-run caidcmannjgahlnbpmidmiecjcoiiigg
+Icon=chrome-caidcmannjgahlnbpmidmiecjcoiiigg-Default
+StartupWMClass=chrome-caidcmannjgahlnbpmidmiecjcoiiigg-Default
+Terminal=false
+StartupNotify=true
+Categories=Network;WebBrowser;

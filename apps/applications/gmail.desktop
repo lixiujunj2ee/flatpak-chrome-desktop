@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Gmail
+Exec=pwa-run fmgjjmmmlfnkbppncabfkddbjimcfncm
+Icon=chrome-fmgjjmmmlfnkbppncabfkddbjimcfncm-Default
+StartupWMClass=chrome-fmgjjmmmlfnkbppncabfkddbjimcfncm-Default
+Terminal=false
+StartupNotify=true
+Categories=Network;WebBrowser;

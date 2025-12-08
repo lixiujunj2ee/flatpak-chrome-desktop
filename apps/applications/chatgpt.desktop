@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=ChatGPT
+Comment=chat chatgpt
+Exec=pwa-run cadlkienfkclaiaibeoongdcgmdikeeg
+Icon=chrome-cadlkienfkclaiaibeoongdcgmdikeeg-Default
+StartupWMClass=chrome-cadlkienfkclaiaibeoongdcgmdikeeg-Default
+Terminal=false
+StartupNotify=true
+Categories=Network;WebBrowser;
