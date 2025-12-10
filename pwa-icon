@@ -1,0 +1,35 @@
+#bin
+LOCAL_SRC_PNG=$1
+APP_ID=$2
+
+if [ -z "${LOCAL_SRC_PNG}" ] || [ -z "${APP_ID}" ]; then
+    echo "chrome://app-icon/bnpnjbjealcpabcenanokcflffolchnm/64"
+    echo "use: pwa-icon 64.png bnpnjbjealcpabcenanokcflffolchnm"
+    exit 1
+fi
+
+if [ ! -f "${LOCAL_SRC_PNG}" ]; then
+    echo "${LOCAL_SRC_PNG} does not exist."
+    exit 1
+fi
+
+MIME_TYPE=$(file -b --mime-type "$LOCAL_SRC_PNG")
+if [ "$MIME_TYPE" != "image/png" ]; then
+    echo "${LOCAL_SRC_PNG} must be a png file."
+    exit 1
+fi
+
+DESKTOP_SRC=$(grep -r ${APP_ID} ~/.local/share/applications/)
+
+if [ -z "$DESKTOP_SRC" ]; then
+    echo "${APP_ID} desktop is not exist ..."
+    exit 1
+fi
+
+mv ${LOCAL_SRC_PNG} ~/.local/share/icons/hicolor/128x128/apps/chrome-${APP_ID}-Default.png
+
+gtk-update-icon-cache -f -t ~/.local/share/icons
+
+update-desktop-database ~/.local/share/applications/ > /dev/null 2>&1
+
+ls ~/.local/share/icons/hicolor/128x128/apps/chrome-${APP_ID}-Default.png --color=auto
