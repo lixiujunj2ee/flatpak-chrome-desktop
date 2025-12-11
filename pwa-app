@@ -1,0 +1,19 @@
+#!/bin/bash
+
+APP_NAME="$1"
+WMCLASS="$2"
+
+if [ -z "${APP_NAME}" ] || [ -z "${WMCLASS}" ]; then
+  echo "input app-name and wmclass ..."
+  exit 0
+fi
+
+# 有窗口 → 激活它
+WIN_ID=$(busctl --user call   org.gnome.Shell   /de/lucaswerkmeister/ActivateWindowByTitle   de.lucaswerkmeister.ActivateWindowByTitle   activateByWmClass s   "$WMCLASS")
+
+if [ "$WIN_ID" == "b true" ]; then
+  exit 0	
+fi
+
+# 没有 → 启动新窗口
+${APP_NAME}

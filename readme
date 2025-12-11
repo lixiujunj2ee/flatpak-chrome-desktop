@@ -4,8 +4,12 @@ you need login into chrome and brower  chrome://apps  create app desktop first
 
 firefox into install gnome extends  ActivateWindowByTitle
 
-pwa-run 
+pwa-run fmgjjmmmlfnkbppncabfkddbjimcfncm
 
-pwa-create 
+pwa-create fmgjjmmmlfnkbppncabfkddbjimcfncm Gmail gmail
+
+pwa-icon you know why use it. because on alma limit so stracit 
+
+pwa-app '/opt/google/chrome/google-chrome %U' google-chrome 
 
 that is ok , you can good luck a nice day~ haha

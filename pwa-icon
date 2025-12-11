@@ -1,4 +1,5 @@
-#bin
+#!/bin/bash
+
 LOCAL_SRC_PNG=$1
 APP_ID=$2
 
