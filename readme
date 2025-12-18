@@ -12,4 +12,7 @@ pwa-icon you know why use it. because on alma limit so stracit
 
 pwa-app '/opt/google/chrome/google-chrome %U' google-chrome 
 
+pwa use go combined into one and must be use dnf install google-chrome-stable
+recommend pwa for easy and recommend dnf stable google-chrome for develop debug
+
 that is ok , you can good luck a nice day~ haha
